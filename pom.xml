@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.fmaul</groupId>
     <artifactId>javascript-console</artifactId>
-    <version>0.7-SNAPSHOT</version>
+    <version>0.6.2-ixxus</version>
     <packaging>pom</packaging>
 
     <name>JavaScript Console</name>
@@ -55,10 +55,10 @@
         <module>javascript-console-share</module>
     </modules>
     <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
+        <repository>
+            <id>ixxus-thirdparty</id>
+            <url>https://inexus.ixxus.co.uk/nexus/content/repositories/thirdparty</url>
+        </repository>
     </distributionManagement>
 
     <!-- This repository is only needed to retrieve Alfresco parent POM. NOTE: This can be removed when/if Alfresco will be on Maven Central -->
@@ -79,17 +79,6 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.7</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <serverId>ossrh</serverId>
-                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
