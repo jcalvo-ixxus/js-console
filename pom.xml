@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>de.fmaul</groupId>
     <artifactId>javascript-console</artifactId>
-    <version>0.7-SNAPSHOT</version>
+    <version>0.6.2-ixxus</version>
     <packaging>pom</packaging>
 
     <name>JavaScript Console</name>
@@ -56,8 +56,8 @@
     </modules>
     <distributionManagement>
         <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <id>ixxus-thirdparty</id>
+            <url>https://inexus.ixxus.co.uk/nexus/content/repositories/thirdparty</url>
         </snapshotRepository>
     </distributionManagement>
 
